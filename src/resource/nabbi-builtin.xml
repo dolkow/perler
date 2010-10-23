@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette>
+	<color><r>0</r><g>0</g><b>0</b><name>N1 Black</name></color>
+	<color><r>41</r><g>37</g><b>33</b><name>N2 Dark Brown</name></color>
+	<color><r>49</r><g>33</g><b>26</b><name>N3 Brown Medium</name></color>
+	<color><r>91</r><g>27</g><b>46</b><name>N4 Wine Red</name></color>
+	<color><r>167</r><g>101</g><b>42</b><name>N5 Butterscotch (Caramelo)</name></color>
+	<color><r>168</r><g>152</g><b>134</b><name>N6 Beige</name></color>
+	<color><r>229</r><g>194</g><b>141</b><name>N7 Skin (Piel)</name></color>
+	<color><r>138</r><g>140</g><b>133</b><name>N8 Ash Grey</name></color>
+	<color><r>26</r><g>53</g><b>36</b><name>N9 Dark Green</name></color>
+	<color><r>189</r><g>189</g><b>189</b><name>N10 Light Grey</name></color>
+	<color><r>64</r><g>33</g><b>149</b><name>N11 Purple</name></color>
+	<color><r>238</r><g>227</g><b>215</b><name>N12 Ivory (Marfil)</name></color>
+	<color><r>229</r><g>81</g><b>51</b><name>N13 Clear Orange</name></color>
+	<color><r>251</r><g>221</g><b>69</b><name>N14 Yellow</name></color>
+	<color><r>255</r><g>255</g><b>255</b><name>N15 White</name></color>
+	<color><r>38</r><g>119</g><b>49</b><name>N16 Green</name></color>
+	<color><r>51</r><g>90</g><b>205</b><name>N17 Blue</name></color>
+	<color><r>240</r><g>204</g><b>203</b><name>N18 Light Pink</name></color>
+	<color><r>188</r><g>36</g><b>44</b><name>N19 Light Red</name></color>
+	<color><r>179</r><g>142</g><b>106</b><name>N20 Light Brown</name></color>
+	<color><r>251</r><g>248</g><b>169</b><name>N21 Light Yellow</name></color>
+	<color><r>67</r><g>181</g><b>54</b><name>N22 Pearl Green</name></color>
+	<color><r>122</r><g>166</g><b>252</b><name>N23 Pastel Blue</name></color>
+	<color><r>190</r><g>172</g><b>246</b><name>N24 Lilac</name></color>
+	<color><r>226</r><g>91</g><b>157</b><name>N25 Old Rose</name></color>
+	<color><r>246</r><g>177</g><b>138</b><name>N26 Light Orange</name></color>
+	<color><r>108</r><g>67</g><b>54</b><name>N27 Brown</name></color>
+	<color><r>185</r><g>210</g><b>254</b><name>N28 Light Blue</name></color>
+	<color><r>246</r><g>159</g><b>58</b><name>N29 Pearl Orange</name></color>
+	<color><r>207</r><g>208</g><b>99</b><name>N30 Olive</name></color>
+</palette>

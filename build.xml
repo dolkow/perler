@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Perler" basedir="." default="release">
+
+	<property name="src.dir" value="src"/>
+	<property name="bin.dir" value="build"/>
+	<property name="rls.dir" value="release"/>
+	<property name="jar.file" value="perler.jar"/>
+	
+	<target name="init">
+		<tstamp>
+			<format property="TIMESTAMP" pattern="yyyy-MM-dd-HHmm"/>
+	    </tstamp>
+		<exec osfamily="unix" executable="svnversion" outputproperty="svn.revision"/>
+		<exec osfamily="unix" executable="hostname" outputproperty="host.name" />
+	</target>
+
+	<target name="updateversion" depends="init">
+		<echo file="src/resource/version">${TIMESTAMP}</echo>
+	</target>
+
+	<target name="jar" depends="init">
+		<delete file="${jar.file}" failonerror="false" />
+		<delete dir="${bin.dir}" failonerror="false" />
+		<mkdir dir="${bin.dir}" />
+		
+		<echo file="revision">Revision ${svn.revision} - generated at ${TIMESTAMP} by ${host.name}</echo>
+	
+		<javac srcdir="${src.dir}" destdir="${bin.dir}" source="1.5" target="1.5" includeantruntime="false" />
+		<copy todir="${bin.dir}">
+	    	<fileset dir="${src.dir}">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+
+		
+		<jar destfile="${jar.file}">
+			<manifest>
+				<attribute name="Main-Class" value="se.dolkow.imagefiltering.app.PerlerApp" />
+				<attribute name="Class-Path" value="." />
+			</manifest>
+			<fileset dir="${bin.dir}" />
+			<zipfileset dir="${src.dir}" prefix="src"/>
+			<fileset file="revision" />
+		</jar>
+		<input message="Keystore password: " addproperty="storepass" />
+		<signjar alias="myself" jar="${jar.file}" storepass="${storepass}"/>
+	</target>
+
+	<target name="release" depends="init, jar">
+		<mkdir dir="${rls.dir}" />
+		<move file="${jar.file}" tofile="${rls.dir}/perler-${TIMESTAMP}.jar" />
+	</target>
+
+</project>
+

@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="chain">
+		<xs:complexType>
+			<xs:sequence maxOccurs="1" minOccurs="1">
+			
+				<xs:element name="loader">
+					<xs:complexType>
+						<xs:all minOccurs="0">
+							<xs:element name="path" type="xs:string" />
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:sequence maxOccurs="unbounded" minOccurs="1">
+					<xs:choice minOccurs="1" maxOccurs="unbounded">
+					
+						<xs:element name="grayscale">
+							<xs:complexType>
+								<xs:all minOccurs="0">
+									<xs:element name="active" type="xs:boolean" />
+								</xs:all>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="edge">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="low" type="xs:int" />
+										<xs:element name="high" type="xs:int" />
+										<xs:element name="treshold" type="xs:int" />
+										<xs:element name="showedges" type="xs:boolean" />
+										<xs:element name="fillparam" type="xs:int" />
+										<xs:element name="fillmode" type="xs:string" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="balance">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="r" type="xs:float" />
+										<xs:element name="g" type="xs:float" />
+										<xs:element name="b" type="xs:float" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="shrinker">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="maxwidth" type="xs:int" />
+										<xs:element name="maxheight" type="xs:int" />
+										<xs:element name="smooth" type="xs:boolean" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="cropper">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="aspectwidth" type="xs:int" />
+										<xs:element name="aspectheight" type="xs:int" />
+										<xs:element name="rectangle">
+											<xs:complexType>
+												<xs:sequence minOccurs="2" maxOccurs="2">
+													<xs:element name="pos">
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element name="x" type="xs:int" />
+																<xs:element name="y" type="xs:int" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="cacher">
+						</xs:element>
+						
+						<xs:element name="brightnesscontrast">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="brightness" type="xs:int" />
+										<xs:element name="contrast" type="xs:float" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="reduce">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="dither" type="xs:float" />
+										<xs:element name="palette">
+											<xs:complexType>
+												<xs:sequence maxOccurs="unbounded" minOccurs="0">
+													<xs:element name="color">
+														<xs:complexType>
+															<xs:sequence maxOccurs="1" minOccurs="1">
+																<xs:element name="r" type="xs:unsignedByte" />
+																<xs:element name="g" type="xs:unsignedByte" />
+																<xs:element name="b" type="xs:unsignedByte" />
+																<xs:sequence maxOccurs="1" minOccurs="0">
+																	<xs:element name="name" type="xs:string" />
+																</xs:sequence>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="upscaler">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="magnification" type="xs:int" />
+										<xs:element name="tilesize" type="xs:int" />
+										<xs:element name="tileheight" type="xs:int" />
+										<xs:element name="tilewidth" type="xs:int" />
+										<xs:element name="drawtiles" type="xs:boolean" />
+										<xs:element name="effect" type="xs:string" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="flipper">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="mode" type="xs:string" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="rotate">
+							<xs:complexType>
+								<xs:sequence minOccurs="0" maxOccurs="unbounded">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="active" type="xs:boolean" />
+										<xs:element name="degrees" type="xs:int" />
+									</xs:choice>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+					</xs:choice>
+				</xs:sequence>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="palette">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded" minOccurs="0">
+				<xs:element name="color">
+					<xs:complexType>
+						<xs:sequence maxOccurs="1" minOccurs="1">
+							<xs:element name="r" type="xs:unsignedByte" />
+							<xs:element name="g" type="xs:unsignedByte" />
+							<xs:element name="b" type="xs:unsignedByte" />
+							<xs:sequence maxOccurs="1" minOccurs="0">
+								<xs:element name="name" type="xs:string" />
+							</xs:sequence>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

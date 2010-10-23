@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette>
+	<color><r>255</r><g>255</g><b>255</b><name>P1 White</name></color>
+	<color><r>255</r><g>240</g><b>205</b><name>P2 Cream</name></color>
+	<color><r>255</r><g>220</g><b>60</b><name>P3 Yellow</name></color>
+	<color><r>245</r><g>115</g><b>90</b><name>P4 Orange</name></color>
+	<color><r>220</r><g>90</g><b>75</b><name>P5 Red</name></color>
+	<color><r>120</r><g>90</g><b>160</b><name>P7 Purple</name></color>
+	<color><r>15</r><g>95</g><b>160</b><name>P8 Dark Blue</name></color>
+	<color><r>50</r><g>155</g><b>210</b><name>P9 Light Blue</name></color>
+	<color><r>95</r><g>150</g><b>75</b><name>P10 Dark Green</name></color>
+	<color><r>110</r><g>215</g><b>15</b><name>P11 Light Green</name></color>
+	<color><r>125</r><g>80</g><b>65</b><name>P12 Brown</name></color>
+	<color><r>155</r><g>150</g><b>160</b><name>P17 Grey</name></color>
+	<color><r>0</r><g>0</g><b>0</b><name>P18 Black</name></color>
+	<color><r>170</r><g>70</g><b>70</b><name>P20 Rust</name></color>
+	<color><r>160</r><g>100</g><b>80</b><name>P21 Light Brown</name></color>
+	<color><r>255</r><g>195</g><b>190</b><name>P33 Peach</name></color>
+	<color><r>225</r><g>165</g><b>150</b><name>P35 Tan (Beige)</name></color>
+	<color><r>195</r><g>130</g><b>155</b><name>P38 Magenta</name></color>
+	<color><r>105</r><g>175</g><b>215</b><name>P52 Pastel Blue</name></color>
+	<color><r>155</r><g>225</g><b>145</b><name>P53 Pastel Green</name></color>
+	<color><r>160</r><g>150</g><b>210</b><name>P54 Pastel Lavender</name></color>
+	<color><r>225</r><g>155</g><b>205</b><name>P55 Pastel Pink</name></color>
+	<color><r>255</r><g>250</g><b>155</b><name>P56 Pastel Yellow</name></color>
+	<color><r>255</r><g>160</g><b>85</b><name>P57 Cheddar</name></color>
+	<color><r>185</r><g>235</g><b>235</b><name>P58 Toothpaste (Dentrifico)</name></color>
+	<color><r>250</r><g>110</g><b>130</b><name>P59 Hot Coral</name></color>
+	<color><r>190</r><g>100</g><b>165</b><name>P60 Plum (Ciruela)</name></color>
+	<color><r>150</r><g>205</g><b>35</b><name>P61 Kiwi Lime</name></color>
+	<color><r>105</r><g>135</g><b>185</b><name>P62 Turquoise</name></color>
+	<color><r>250</r><g>175</g><b>185</b><name>P63 Blush (Sonrojado)</name></color>
+	<color><r>245</r><g>120</g><b>160</b><name>P6? Bubble Gum</name></color>
+	<color><r>225</r><g>130</g><b>170</b><name>P6? Pink</name></color>
+	<color><r>35</r><g>180</g><b>230</b><name>P70 Periwinkle</name></color>
+	<color><r>245</r><g>210</g><b>240</b><name>P79 Light Pink</name></color>
+	<color><r>135</r><g>190</g><b>80</b><name>P80 Bright Green</name></color>
+	<color><r>225</r><g>75</g><b>125</b><name>P88 Raspberry</name></color>
+	<color><r>245</r><g>150</g><b>95</b><name>P90 Butterscotch (Caramelo)</name></color>
+	<color><r>65</r><g>180</g><b>155</b><name>P91 Parrot Green</name></color>
+	<color><r>100</r><g>90</g><b>90</b><name>P92 Dark Grey</name></color>
+</palette>

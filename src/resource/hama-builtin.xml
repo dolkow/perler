@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette>
+	<color><r>255</r><g>255</g><b>255</b><name>H1 White</name></color>
+	<color><r>247</r><g>244</g><b>214</b><name>H2 Cream</name></color>
+	<color><r>241</r><g>218</g><b>27</b><name>H3 Yellow</name></color>
+	<color><r>229</r><g>108</g><b>20</b><name>H4 Orange</name></color>
+	<color><r>203</r><g>10</g><b>10</b><name>H5 Red</name></color>
+	<color><r>255</r><g>196</g><b>239</b><name>H6 Pink</name></color>
+	<color><r>128</r><g>61</g><b>184</b><name>H7 Purple</name></color>
+	<color><r>46</r><g>54</g><b>166</b><name>H8 Blue</name></color>
+	<color><r>77</r><g>87</g><b>220</b><name>H9 Light Blue</name></color>
+	<color><r>32</r><g>118</g><b>23</b><name>H10 Green</name></color>
+	<color><r>142</r><g>234</g><b>177</b><name>H11 Light Green</name></color>
+	<color><r>63</r><g>46</g><b>16</b><name>H12 Brown</name></color>
+	<color><r>149</r><g>149</g><b>149</b><name>H17 Grey</name></color>
+	<color><r>0</r><g>0</g><b>0</b><name>H18 Black</name></color>
+	<color><r>164</r><g>76</g><b>46</b><name>H20 Red Brown</name></color>
+	<color><r>182</r><g>109</g><b>49</b><name>H21 Light Brown</name></color>
+	<color><r>133</r><g>3</g><b>38</b><name>H22 Dark Red</name></color>
+	<color><r>70</r><g>70</g><b>70</b><name>H23 Ash (transparent)</name></color>
+	<color><r>241</r><g>210</g><b>193</b><name>H25 Flesh</name></color>
+	<color><r>238</r><g>212</g><b>170</b><name>H27 Beige</name></color>
+	<color><r>7</r><g>61</g><b>7</b><name>H28 Dark Green</name></color>
+	<color><r>179</r><g>36</g><b>96</b><name>H29 Raspberry</name></color>
+	<color><r>79</r><g>16</g><b>43</b><name>H30 Burgundy</name></color>
+	<color><r>93</r><g>150</g><b>176</b><name>H31 Turqoise</name></color>
+	<color><r>220</r><g>145</g><b>205</b><name>H32 Fuchsia</name></color>
+	<color><r>232</r><g>244</g><b>70</b><name>H43 Pastel Yellow</name></color>
+	<color><r>251</r><g>155</g><b>136</b><name>H44 Pastel Coral</name></color>
+	<color><r>171</r><g>136</g><b>251</b><name>H45 Pastel Purple</name></color>
+	<color><r>121</r><g>194</g><b>255</b><name>H46 Pastel Blue</name></color>
+	<color><r>153</r><g>255</g><b>103</b><name>H47 Pastel Green</name></color>
+	<color><r>213</r><g>125</g><b>226</b><name>H48 Pastel Pink</name></color>
+	<color><r>237</r><g>189</g><b>57</b><name>H60 Teddybear</name></color>
+</palette>
