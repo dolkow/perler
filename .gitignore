@@ -1,0 +1,9 @@
+.*
+bin/
+build/
+keystore
+release/
+revision
+testimages/
+todo
+working files/
