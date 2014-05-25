@@ -1,4 +1,5 @@
 .*
+*.jar
 bin/
 build/
 keystore

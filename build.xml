@@ -5,12 +5,16 @@
 	<property name="bin.dir" value="build"/>
 	<property name="rls.dir" value="release"/>
 	<property name="jar.file" value="perler.jar"/>
+	<property name="keystore.file" value="keystore"/>
 	
 	<target name="init">
 		<tstamp>
 			<format property="TIMESTAMP" pattern="yyyy-MM-dd-HHmm"/>
 	    </tstamp>
-		<exec osfamily="unix" executable="svnversion" outputproperty="svn.revision"/>
+		<exec osfamily="unix" executable="git" outputproperty="git.revision">
+			<arg value="describe" />
+			<arg value="--dirty" />
+		</exec>
 		<exec osfamily="unix" executable="hostname" outputproperty="host.name" />
 	</target>
 
@@ -23,7 +27,7 @@
 		<delete dir="${bin.dir}" failonerror="false" />
 		<mkdir dir="${bin.dir}" />
 		
-		<echo file="revision">Revision ${svn.revision} - generated at ${TIMESTAMP} by ${host.name}</echo>
+		<echo file="revision">Revision ${git.revision} - generated at ${TIMESTAMP} by ${host.name}</echo>
 	
 		<javac srcdir="${src.dir}" destdir="${bin.dir}" source="1.5" target="1.5" includeantruntime="false" />
 		<copy todir="${bin.dir}">
@@ -42,8 +46,10 @@
 			<zipfileset dir="${src.dir}" prefix="src"/>
 			<fileset file="revision" />
 		</jar>
-		<input message="Keystore password: " addproperty="storepass" />
-		<signjar alias="myself" jar="${jar.file}" storepass="${storepass}"/>
+		<input message="Keystore password: " addproperty="storepass">
+			<handler type="secure" />
+		</input>
+		<signjar alias="myself" jar="${jar.file}" keystore="${keystore.file}" storepass="${storepass}"/>
 	</target>
 
 	<target name="release" depends="init, jar">
