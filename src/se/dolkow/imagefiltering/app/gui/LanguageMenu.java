@@ -33,9 +33,9 @@ import se.dolkow.imagefiltering.internationalization.Messages;
 public class LanguageMenu extends JMenu {
 	private static final long serialVersionUID = 1L;
 	private static final String[] LANGUAGE_CODES = new String[] {
-		"da", "en", "es", "it", "sv"};  //$NON-NLS-1$//$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$
+		"da", "de", "en", "es", "fr", "it", "sv"};  //$NON-NLS-1$//$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$
 	private static final String[] LANGUAGE_NAMES = new String[] {
-		"Dansk", "English", "Español", "Italiano", "Svenska"};  //$NON-NLS-1$//$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$
+		"Dansk", "Deutsch", "English", "Español", "Français", "Italiano", "Svenska"};  //$NON-NLS-1$//$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$
 	
 	public LanguageMenu() {
 		super(Messages.get("LanguageMenu.title")); //$NON-NLS-1$

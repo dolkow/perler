@@ -29,7 +29,7 @@ import java.util.TreeSet;
 public class TranslationCheck {
 
 	public static void main(String[] args) {
-		String[] translations = new String[]{"es", "sv", "it", "da"};
+		String[] translations = new String[]{"es", "sv", "it", "da", "de", "fr"};
 		
 		ResourceBundle base = new Messages.EmptyBundle();
 		
