@@ -1,5 +1,6 @@
 package se.dolkow.imagefiltering.gui;
 
+import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
@@ -15,10 +16,13 @@ import se.dolkow.imagefiltering.app.gui.configuration.palette.Color;
 
 public class ColorInfoImageDisplay extends ImageDisplay {
 	
+	public static final Color NO_COLOR = new Color(java.awt.Color.GRAY.getRGB(), "None");
+	
 	private Upscaler upscaler;
 	private ColorSelectionListener listener;
 	private AbstractReduceColorsFilter reduceColorsFilter;
 	private ImageProducer cachedReduceColorsFilter;
+	private int mouseX, mouseY;
 
 	public ColorInfoImageDisplay(ImageProducer source, AbstractReduceColorsFilter reduceColorsFilter, boolean cache) {
 		this(source, reduceColorsFilter, cache, true);
@@ -59,6 +63,8 @@ public class ColorInfoImageDisplay extends ImageDisplay {
 	
 	private class MouseHandler extends MouseAdapter implements MouseMotionListener {
 
+		private int lastMouseX = -1, lastMouseY = -1;
+		
 		public void mouseMoved(MouseEvent e) {
 			try {
 				BufferedImage image = cachedReduceColorsFilter.getImage();
@@ -69,12 +75,39 @@ public class ColorInfoImageDisplay extends ImageDisplay {
 					int rgb = image.getRGB(x, y);
 					Color color = getColor(rgb);
 					if (listener != null) listener.selectedColorChanged(color);
+					mouseX = x; mouseY = y;
+				}
+				else {
+					mouseX = -1; mouseY = -1;
+					if (listener != null) listener.selectedColorChanged(NO_COLOR);
+				}
+				
+				if (mouseX != lastMouseX || mouseY != lastMouseY) {
+					repaint();
+					lastMouseX = mouseX;
+					lastMouseY = mouseY;
 				}
 			}
 			catch (ImageException e1) {
 				return;
 			}
 		}
+	}
+	
+	protected void paintOverlay(Graphics g) {
+		if (mouseX < 0 || mouseY < 0) return;
+		int scale = upscaler.getMagnification();
+		int x = lastX + mouseX * scale;
+		int y = lastY + mouseY * scale;
+		g = g.create();
+		drawRectColored(g, x, y, scale, java.awt.Color.WHITE);
+		drawRectColored(g, x-1, y-1, scale+2, java.awt.Color.DARK_GRAY);
+		g.dispose();
+	}
+
+	private void drawRectColored(Graphics g, int x, int y, int wh, java.awt.Color color) {
+		g.setColor(color);
+		g.drawRect(x, y, wh, wh);
 	}
 
 	public static interface ColorSelectionListener {

@@ -143,8 +143,12 @@ public class ImageDisplay extends JPanel implements ImageProducerListener {
 			g.setColor(Color.BLACK);
 			g.drawString(failmsg, 10, 20);
 		}
+		else paintOverlay(g);
 	}
 	
+	protected void paintOverlay(Graphics g) {
+	}
+
 	protected void setEnableMagnify(boolean b) {
 		synchronized(this) {
 			enableMagnify = b;

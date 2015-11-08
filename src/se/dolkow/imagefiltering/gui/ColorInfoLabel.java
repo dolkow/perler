@@ -16,7 +16,7 @@ public class ColorInfoLabel extends JPanel implements ColorSelectionListener {
 	private Swatch swatch;
 
 	public ColorInfoLabel() {
-		Color c = new Color(java.awt.Color.GRAY.getRGB(), "None");
+		Color c = ColorInfoImageDisplay.NO_COLOR;
 		
 		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
 		setBorder(BorderFactory.createEmptyBorder(4, 6, 2, 4));
