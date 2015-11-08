@@ -30,11 +30,15 @@ import java.net.URL;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
+
+import se.dolkow.imagefiltering.AbstractReduceColorsFilter;
 import se.dolkow.imagefiltering.ImageProducer;
 import se.dolkow.imagefiltering.ImageProducerListener;
-import se.dolkow.imagefiltering.gui.ImageDisplay;
+import se.dolkow.imagefiltering.gui.ColorInfoLabel;
+import se.dolkow.imagefiltering.gui.ColorInfoImageDisplay;
 import se.dolkow.imagefiltering.internationalization.Messages;
 
 public class PerlerGUI extends JFrame {
@@ -84,13 +88,22 @@ public class PerlerGUI extends JFrame {
 		ProducerTabPane pPane= new ProducerTabPane(producers);
 		pPane.setMinimumSize(new Dimension(50,0));
 		
-		ImageDisplay lastOutput = new ImageDisplay(producers[producers.length-1], true);
+		JPanel outputPanel = new JPanel(new BorderLayout());
+
+		AbstractReduceColorsFilter reduceColorsFilter = getReduceColorsFilter(producers);
+		ColorInfoImageDisplay lastOutput = new ColorInfoImageDisplay(
+			producers[producers.length - 1], reduceColorsFilter, true);
 		JScrollPane scroll = new JScrollPane(lastOutput, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		scroll.setMinimumSize(new Dimension(50,0));
+		outputPanel.add(scroll, BorderLayout.CENTER);
+		
+		ColorInfoLabel colorInfoLabel = new ColorInfoLabel();
+		lastOutput.setColorSelectionListener(colorInfoLabel);
+		outputPanel.add(colorInfoLabel, BorderLayout.SOUTH);
 		
 		JSplitPane split = new JSplitPane();
 		split.setLeftComponent(pPane);
-		split.setRightComponent(scroll);
+		split.setRightComponent(outputPanel);
 		split.setContinuousLayout(true);
 		split.setResizeWeight(0.5);
 		
@@ -152,6 +165,15 @@ public class PerlerGUI extends JFrame {
 			disposed = true;
 			notifyAll();
 		}
+	}
+	
+	private AbstractReduceColorsFilter getReduceColorsFilter(ImageProducer[] producers) {
+		for (ImageProducer producer : producers) {
+			if (producer instanceof AbstractReduceColorsFilter) {
+				return (AbstractReduceColorsFilter)producer;
+			}
+		}
+		throw new RuntimeException("Reduce colors filter not found");
 	}
 	
 	protected static class ChangedSetter implements ImageProducerListener {
