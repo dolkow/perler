@@ -174,6 +174,7 @@ public class PerlerApp {
 			
 			File f = fc.getSelectedFile();
 			if (load(f)) {
+				fc.saveLastDirectory();
 				return;
 			}
 			ans = fc.showOpenDialog(null);

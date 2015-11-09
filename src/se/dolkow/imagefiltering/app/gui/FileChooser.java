@@ -20,6 +20,7 @@ package se.dolkow.imagefiltering.app.gui;
 */
 
 import java.io.File;
+import java.util.prefs.Preferences;
 
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
@@ -28,16 +29,33 @@ import se.dolkow.imagefiltering.internationalization.Messages;
 
 public class FileChooser extends JFileChooser {
 
+	public static final String PREFS_PATH = "se/dolkow/imagefiltering/app/gui";
+	
 	private static final long serialVersionUID = 1L;
+	private static final String LAST_DIRECTORY_PREFERENCE = "lastLoadChainDirectory";
 
 	public FileChooser(String[] extension) {
 		setFileSelectionMode(JFileChooser.FILES_ONLY);
 		setMultiSelectionEnabled(false);
 		setFileFilter(new ExtensionFileFilter(extension));
+		loadLastDirectory();
 	}
 	
 	public FileChooser(String extension) {
 		this(new String[]{extension});
+	}
+	
+	public void saveLastDirectory() {
+		getPreferences().put(LAST_DIRECTORY_PREFERENCE, getCurrentDirectory().getPath());
+	}
+
+	private void loadLastDirectory() {
+		String dir = getPreferences().get(LAST_DIRECTORY_PREFERENCE, null); //$NON-NLS-1$
+		if (dir != null) setCurrentDirectory(new File(dir));
+	}
+
+	private Preferences getPreferences() {
+		return Preferences.userRoot().node(PREFS_PATH);
 	}
 	
 	private static class ExtensionFileFilter extends FileFilter {

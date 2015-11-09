@@ -33,7 +33,7 @@ public class Swatch extends JPanel {
 
 	public Swatch(int rgb) {
 		super();
-		setBackground(new java.awt.Color(rgb));
+		setColor(rgb);
 		
 		Dimension dim = new Dimension(20,20);
 		setMinimumSize(dim);
@@ -41,5 +41,9 @@ public class Swatch extends JPanel {
 		setMaximumSize(dim);
 		setBorder(BorderFactory.createLineBorder(java.awt.Color.black));
 		setOpaque(true);
+	}
+
+	public void setColor(int rgb) {
+		setBackground(new java.awt.Color(rgb));
 	}
 }
