@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette>
+	<color><r>255</r><g>255</g><b>255</b><name>S01 White</name></color>
+	<color><r>255</r><g>163</g><b>139</b><name>S02 Burning Sand</name></color>
+	<color><r>255</r><g>181</g><b>73</b><name>S03 Tangerine</name></color>
+	<color><r>255</r><g>103</g><b>31</b><name>S04 Orange</name></color>
+	<color><r>225</r><g>6</g><b>0</b><name>S05 Tall Poppy</name></color>
+	<color><r>236</r><g>134</g><b>208</b><name>S06 Raspberry Pink</name></color>
+	<color><r>167</r><g>168</g><b>170</b><name>S07 Gray2</name></color>
+	<color><r>38</r><g>208</g><b>124</b><name>S08 Emerald</name></color>
+	<color><r>0</r><g>104</g><b>94</b><name>S09 Dark Green</name></color>
+	<color><r>65</r><g>182</g><b>230</b><name>S10 Baby Blue</name></color>
+	<color><r>0</r><g>75</g><b>135</b><name>S11 Dark Blue</name></color>
+	<color><r>160</r><g>94</g><b>181</b><name>S12 Pastel Lavender</name></color>
+	<color><r>0</r><g>0</g><b>0</b><name>S13 Black</name></color>
+	<color><r>250</r><g>224</g><b>83</b><name>S14 Sandstorm</name></color>
+	<color><r>134</r><g>74</g><b>51</b><name>S15 Redwood</name></color>
+	<color><r>92</r><g>71</g><b>56</b><name>S16 Brown</name></color>
+	<color><r>123</r><g>77</g><b>53</b><name>S17 Light Brown</name></color>
+	<color><r>221</r><g>188</g><b>176</b><name>S18 Sand</name></color>
+	<color><r>244</r><g>205</g><b>212</b><name>S19 Bubble Gun</name></color>
+	<color><r>36</r><g>158</g><b>107</b><name>S20 Green</name></color>
+	<color><r>124</r><g>204</g><b>108</b><name>S21 Pastel Green</name></color>
+	<color><r>51</r><g>0</g><b>114</b><name>S22 Purple</name></color>
+	<color><r>125</r><g>85</g><b>199</b><name>S23 Royal Purple</name></color>
+	<color><r>20</r><g>123</g><b>209</b><name>S24 True Blue</name></color>
+	<color><r>233</r><g>60</g><b>172</b><name>S25 Hot Pink</name></color>
+	<color><r>230</r><g>56</g><b>136</b><name>S26 Magenta</name></color>
+	<color><r>255</r><g>209</g><b>0</b><name>S27 Yellow</name></color>
+	<color><r>234</r><g>184</g><b>228</b><name>S28 Lily Pink</name></color>
+	<color><r>246</r><g>235</g><b>97</b><name>S29 Pastel Yellow</name></color>
+	<color><r>153</r><g>214</g><b>234</b><name>S30 Shadow Green</name></color>
+	<color><r>185</r><g>220</g><b>210</b><name>S31 Sea Mist</name></color>
+	<color><r>253</r><g>208</g><b>134</b><name>S32 Beeswax</name></color>
+	<color><r>197</r><g>180</g><b>227</b><name>S33 Maverick</name></color>
+	<color><r>186</r><g>12</g><b>47</b><name>S34 Red</name></color>
+	<color><r>247</r><g>206</g><b>215</b><name>S35 Mona Lisa</name></color>
+	<color><r>201</r><g>128</g><b>158</b><name>S36 Old Pink</name></color>
+	<color><r>100</r><g>204</g><b>201</b><name>S37 Blue-Green</name></color>
+	<color><r>153</r><g>30</g><b>102</b><name>S38 Burgundy</name></color>
+	<color><r>237</r><g>139</g><b>0</b><name>S39 Yellow Orange</name></color>
+	<color><r>241</r><g>167</g><b>220</b><name>S40 Carnation Pink</name></color>
+	<color><r>136</r><g>139</g><b>141</b><name>S43 Gray3</name></color>
+	<color><r>141</r><g>200</g><b>232</b><name>S44 Sky Blue</name></color>
+	<color><r>0</r><g>178</g><b>169</b><name>S45 Medium Turquoise</name></color>
+	<color><r>164</r><g>214</g><b>94</b><name>S46 Bright Green</name></color>
+	<color><r>180</r><g>126</g><b>0</b><name>S47 Marigold</name></color>
+	<color><r>255</r><g>199</g><b>44</b><name>S48 Corn</name></color>
+	<color><r>137</r><g>59</g><b>103</b><name>S49 Mulberry Wood</name></color>
+	<color><r>250</r><g>170</g><b>141</b><name>S50 Mandys Pink</name></color>
+	<color><r>245</r><g>225</g><b>164</b><name>S51 Spring Sun</name></color>
+	<color><r>242</r><g>240</g><b>161</b><name>S52 Picasso</name></color>
+	<color><r>105</r><g>179</g><b>231</b><name>S53 Turquoise</name></color>
+	<color><r>0</r><g>144</g><b>218</b><name>S54 Light Blue</name></color>
+	<color><r>173</r><g>220</g><b>145</b><name>S55 Pistachio</name></color>
+	<color><r>255</r><g>106</g><b>19</b><name>S56 Bright Carrot</name></color>
+	<color><r>164</r><g>73</g><b>61</b><name>S57 Buccaneer</name></color>
+	<color><r>165</r><g>0</g><b>52</b><name>S58 Paprika</name></color>
+	<color><r>89</r><g>73</g><b>167</b><name>S59 Butterfly Bush</name></color>
+	<color><r>167</r><g>123</g><b>202</b><name>S60 Lavender</name></color>
+	<color><r>206</r><g>220</g><b>0</b><name>S61 Key Lomen Pie</name></color>
+	<color><r>0</r><g>124</g><b>88</b><name>S62 Green Tea</name></color>
+	<color><r>44</r><g>45</g><b>101</b><name>S64 Black Rock</name></color>
+	<color><r>243</r><g>234</g><b>93</b><name>S65 Canary</name></color>
+	<color><r>244</r><g>99</g><b>58</b><name>S66 Blaze Orange</name></color>
+	<color><r>243</r><g>207</g><b>179</b><name>S67 Vanilla</name></color>
+	<color><r>225</r><g>184</g><b>127</b><name>S68 Tan</name></color>
+	<color><r>51</r><g>63</g><b>72</b><name>S69 Mine Shaft</name></color>
+	<color><r>168</r><g>173</g><b>0</b><name>S70 Drark Algae</name></color>
+	<color><r>0</r><g>133</g><b>34</b><name>S71 Jade Green</name></color>
+	<color><r>120</r><g>213</g><b>225</b><name>S72 Light Sea Blue</name></color>
+	<color><r>72</r><g>169</g><b>197</b><name>S73 Steel Blue</name></color>
+	<color><r>0</r><g>174</g><b>214</b><name>S74 Azure</name></color>
+	<color><r>0</r><g>133</g><b>173</b><name>S75 Dark Steel Blue</name></color>
+	<color><r>0</r><g>174</g><b>199</b><name>S76 Sea Blue</name></color>
+	<color><r>217</r><g>217</g><b>214</b><name>S77 Ghost While</name></color>
+	<color><r>200</r><g>201</g><b>199</b><name>S78 Ash Grey</name></color>
+	<color><r>187</r><g>188</g><b>188</b><name>S79 Gray1</name></color>
+	<color><r>153</r><g>155</g><b>48</b><name>S80 Dark Olive</name></color>
+	<color><r>205</r><g>160</g><b>119</b><name>S81 Deer</name></color>
+	<color><r>181</r><g>129</g><b>80</b><name>S82 Clay</name></color>
+	<color><r>184</r><g>97</g><b>37</b><name>S83 Sienna</name></color>
+	<color><r>207</r><g>111</g><b>119</b><name>S84 Deep Chestnut</name></color>
+	<color><r>166</r><g>25</g><b>46</b><name>S85 Red Wine</name></color>
+	<color><r>255</r><g>184</g><b>28</b><name>S86 Goldenrod</name></color>
+	<color><r>255</r><g>109</g><b>106</b><name>S87 Coral Red</name></color>
+	<color><r>218</r><g>24</g><b>132</b><name>S88 Dark Pink</name></color>
+	<color><r>99</r><g>102</g><b>106</b><name>S89 Gray4</name></color>
+	<color><r>255</r><g>197</g><b>110</b><name>S90 Pastel Orange</name></color>
+	<color><r>24</r><g>48</g><b>40</b><name>S91 Brunswick Green</name></color>
+</palette>
