@@ -71,7 +71,7 @@ public class PaletteSettings extends PalettePanel {
 		}
 		
 		XMLParser xmlp = XMLParser.getInstance();
-		for (String s : new String[]{"hama-builtin.xml", "nabbi-builtin.xml", "perlerbeads-builtin.xml"}) { //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+		for (String s : new String[]{"hama-builtin.xml", "nabbi-builtin.xml", "perlerbeads-builtin.xml", "artkal-serie-s-5mm-hard.xml", "artkal-serie-r-5mm-soft.xml", "artkal-serie-c-2.6mm-hard.xml", "artkal-serie-a-2.6mm-soft.xml"}) { //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$
 			String path = "/resource/" + s; //$NON-NLS-1$
 			URL url = getClass().getResource(path);
 			if (url == null) {

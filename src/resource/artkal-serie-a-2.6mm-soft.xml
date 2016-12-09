@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette>
+	<color><r>255</r><g>255</g><b>255</b><name>A01 White</name></color>
+	<color><r>0</r><g>0</g><b>0</b><name>A02 Black</name></color>
+	<color><r>255</r><g>181</g><b>73</b><name>A03 Tangerine</name></color>
+	<color><r>237</r><g>139</g><b>0</b><name>A04 Yellow Orange</name></color>
+	<color><r>225</r><g>6</g><b>0</b><name>A05 Tall Poppy</name></color>
+	<color><r>186</r><g>12</g><b>47</b><name>A06 Red</name></color>
+	<color><r>241</r><g>167</g><b>220</b><name>A07 Carnation Pink</name></color>
+	<color><r>233</r><g>60</g><b>172</b><name>A08 Hot Pink</name></color>
+	<color><r>230</r><g>56</g><b>136</b><name>A09 Magenta</name></color>
+	<color><r>242</r><g>240</g><b>161</b><name>A10 Picasso</name></color>
+	<color><r>255</r><g>209</g><b>0</b><name>A11 Yellow</name></color>
+	<color><r>173</r><g>220</g><b>145</b><name>A12 Pistachio</name></color>
+	<color><r>124</r><g>204</g><b>108</b><name>A13 Pastel Green</name></color>
+	<color><r>36</r><g>158</g><b>107</b><name>A14 Green</name></color>
+	<color><r>0</r><g>124</g><b>88</b><name>A15 Green Tea</name></color>
+	<color><r>255</r><g>106</g><b>19</b><name>A16 Bright Carrot</name></color>
+	<color><r>255</r><g>103</g><b>31</b><name>A17 Orange</name></color>
+	<color><r>141</r><g>200</g><b>232</b><name>A18 Sky Blue</name></color>
+	<color><r>65</r><g>182</g><b>230</b><name>A19 Baby Blue</name></color>
+	<color><r>0</r><g>144</g><b>218</b><name>A20 Light Blue</name></color>
+	<color><r>0</r><g>75</g><b>135</b><name>A21 Dark Blue</name></color>
+	<color><r>244</r><g>205</g><b>212</b><name>A22 Bubble Gun</name></color>
+	<color><r>221</r><g>188</g><b>176</b><name>A23 Sand</name></color>
+	<color><r>253</r><g>208</g><b>134</b><name>A24 Beeswax</name></color>
+	<color><r>167</r><g>123</g><b>202</b><name>A25 Lavender</name></color>
+	<color><r>160</r><g>94</g><b>181</b><name>A26 Pastel Lavender</name></color>
+	<color><r>51</r><g>0</g><b>114</b><name>A27 Purple</name></color>
+	<color><r>180</r><g>126</g><b>0</b><name>A28 Marigold</name></color>
+	<color><r>164</r><g>73</g><b>61</b><name>A29 Buccaneer</name></color>
+	<color><r>134</r><g>74</g><b>51</b><name>A30 Redwood</name></color>
+	<color><r>123</r><g>77</g><b>53</b><name>A31 Light Brown</name></color>
+	<color><r>92</r><g>71</g><b>56</b><name>A32 Brown</name></color>
+	<color><r>167</r><g>168</g><b>170</b><name>A33 Gray2</name></color>
+	<color><r>136</r><g>139</g><b>141</b><name>A34 Gray3</name></color>
+	<color><r>201</r><g>128</g><b>158</b><name>A36 Old Pink</name></color>
+	<color><r>20</r><g>123</g><b>209</b><name>A37 True Blue</name></color>
+	<color><r>105</r><g>179</g><b>231</b><name>A38 Turquoise</name></color>
+	<color><r>153</r><g>214</g><b>234</b><name>A39 Shadow Green</name></color>
+	<color><r>206</r><g>220</g><b>0</b><name>A40 Key Lomen Pie</name></color>
+	<color><r>246</r><g>235</g><b>97</b><name>A41 Pastel Yellow</name></color>
+	<color><r>250</r><g>224</g><b>83</b><name>A42 Sandstorm</name></color>
+	<color><r>165</r><g>0</g><b>52</b><name>A43 Paprika</name></color>
+	<color><r>255</r><g>163</g><b>139</b><name>A44 Burning Sand</name></color>
+	<color><r>121</r><g>217</g><b>124</b><name>A45 Spring Green</name></color>
+	<color><r>243</r><g>234</g><b>93</b><name>A46 Canary</name></color>
+	<color><r>243</r><g>207</g><b>179</b><name>A47 Vanilla</name></color>
+	<color><r>255</r><g>199</g><b>44</b><name>A48 Corn</name></color>
+	<color><r>236</r><g>134</g><b>208</b><name>A49 Raspberry Pink</name></color>
+	<color><r>197</r><g>180</g><b>227</b><name>A50 Maverick</name></color>
+	<color><r>245</r><g>225</g><b>164</b><name>A51 Spring Sun</name></color>
+	<color><r>89</r><g>73</g><b>167</b><name>A52 Butterfly Bush</name></color>
+	<color><r>164</r><g>214</g><b>94</b><name>A53 Bright Green</name></color>
+	<color><r>0</r><g>178</g><b>169</b><name>A54 Medium Turquoise</name></color>
+	<color><r>108</r><g>194</g><b>74</b><name>A55 Conifer</name></color>
+	<color><r>136</r><g>139</g><b>141</b><name>A56 Gray</name></color>
+	<color><r>228</r><g>0</g><b>43</b><name>A57 Fresh Red</name></color>
+	<color><r>44</r><g>45</g><b>101</b><name>A58 Black Rock</name></color>
+	<color><r>157</r><g>34</g><b>53</b><name>A59 Scarlett</name></color>
+	<color><r>185</r><g>220</g><b>210</b><name>A60 Sea Mist</name></color>
+	<color><r>241</r><g>235</g><b>156</b><name>A61 Feta</name></color>
+	<color><r>255</r><g>109</g><b>106</b><name>A62 Carnation</name></color>
+	<color><r>234</r><g>190</g><b>219</b><name>A63 Pink Pearl</name></color>
+	<color><r>165</r><g>0</g><b>80</b><name>A64 Rose</name></color>
+	<color><r>232</r><g>119</g><b>34</b><name>A65 Mango Tango</name></color>
+	<color><r>134</r><g>31</g><b>124</b><name>A66 Wild Watermelon</name></color>
+	<color><r>177</r><g>78</g><b>181</b><name>A67 Pink Flamingo</name></color>
+	<color><r>141</r><g>200</g><b>232</b><name>A68 Toothpaste Blue</name></color>
+	<color><r>51</r><g>63</g><b>72</b><name>A69 Mine Shaft</name></color>
+	<color><r>24</r><g>48</g><b>40</b><name>A70 Brunswick Green</name></color>
+	<color><r>255</r><g>184</g><b>28</b><name>A71 Goldenrod</name></color>
+	<color><r>255</r><g>197</g><b>110</b><name>A72 Pastel Orange</name></color>
+	<color><r>184</r><g>97</g><b>37</b><name>A73 Sienna</name></color>
+	<color><r>205</r><g>160</g><b>119</b><name>A74 Deer</name></color>
+	<color><r>181</r><g>129</g><b>80</b><name>A75 Clay</name></color>
+	<color><r>255</r><g>109</g><b>106</b><name>A76 Coral Red</name></color>
+	<color><r>207</r><g>111</g><b>119</b><name>A77 Deep Chestnut</name></color>
+	<color><r>166</r><g>25</g><b>46</b><name>A78 Red Wine</name></color>
+	<color><r>120</r><g>213</g><b>225</b><name>A79 Light Sea Blue</name></color>
+	<color><r>0</r><g>174</g><b>199</b><name>A80 Sea Blue</name></color>
+	<color><r>72</r><g>169</g><b>197</b><name>A81 Steel Blue</name></color>
+	<color><r>0</r><g>174</g><b>214</b><name>A82 Azure</name></color>
+	<color><r>0</r><g>133</g><b>173</b><name>A83 Dark Steel Blue</name></color>
+	<color><r>168</r><g>173</g><b>0</b><name>A84 Drark Algae</name></color>
+	<color><r>153</r><g>155</g><b>48</b><name>A85 Dark Olive</name></color>
+	<color><r>0</r><g>133</g><b>34</b><name>A86 Jade Green</name></color>
+	<color><r>217</r><g>217</g><b>214</b><name>A87 Ghost While</name></color>
+	<color><r>200</r><g>201</g><b>199</b><name>A88 Ash Grey</name></color>
+	<color><r>187</r><g>188</g><b>188</b><name>A89 Gray1</name></color>
+	<color><r>99</r><g>102</g><b>106</b><name>A90 Gray4</name></color>
+</palette>
