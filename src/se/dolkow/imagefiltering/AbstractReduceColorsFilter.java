@@ -38,7 +38,7 @@ import se.dolkow.imagefiltering.tree.Node;
 
 public abstract class AbstractReduceColorsFilter extends AbstractPixelModifier {
 
-	private static final int mult = 14;
+	private static final int mult = 44;
 	
 	protected Map<Integer, String> colors = new HashMap<Integer, String>(); //rgb -> name
 	protected Map<Integer, MutableInteger> usage = new HashMap<Integer, MutableInteger>(); //rgb -> use count
@@ -151,14 +151,14 @@ public abstract class AbstractReduceColorsFilter extends AbstractPixelModifier {
 							Image img = alphanum.get(c);
 							if (img == null) {
 								g.setColor(Color.RED);
-								g.fillRect(x, y, 3, 5);
+								g.fillRect(x, y, 3, 20);
 							} else {
 								g.drawImage(img, x, y, null);
 							}
 							g.setColor(new Color(color));
-							g.fillRect(ix+3, iy+8, 8, 5);
+							g.fillRect(ix+3, iy+22, 39, 20);
 							
-							x+=4;
+							x+=14;
 						}
 						
 						i++;
